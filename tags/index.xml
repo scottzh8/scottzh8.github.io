@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Scott Zhang</title>
+    <link>https://scottzh8.github.io/tags/</link>
+    <description>Recent content in Tags on Scott Zhang</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Nov 2026 12:00:00 -0800</lastBuildDate>
+    <atom:link href="https://scottzh8.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cuda</title>
+      <link>https://scottzh8.github.io/tags/cuda/</link>
+      <pubDate>Fri, 20 Nov 2026 12:00:00 -0800</pubDate>
+      <guid>https://scottzh8.github.io/tags/cuda/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Gpu</title>
+      <link>https://scottzh8.github.io/tags/gpu/</link>
+      <pubDate>Fri, 20 Nov 2026 12:00:00 -0800</pubDate>
+      <guid>https://scottzh8.github.io/tags/gpu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kernels</title>
+      <link>https://scottzh8.github.io/tags/kernels/</link>
+      <pubDate>Fri, 20 Nov 2026 12:00:00 -0800</pubDate>
+      <guid>https://scottzh8.github.io/tags/kernels/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Learning-Notes</title>
+      <link>https://scottzh8.github.io/tags/learning-notes/</link>
+      <pubDate>Fri, 20 Nov 2026 12:00:00 -0800</pubDate>
+      <guid>https://scottzh8.github.io/tags/learning-notes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Perfetto</title>
+      <link>https://scottzh8.github.io/tags/perfetto/</link>
+      <pubDate>Fri, 20 Nov 2026 12:00:00 -0800</pubDate>
+      <guid>https://scottzh8.github.io/tags/perfetto/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Streams</title>
+      <link>https://scottzh8.github.io/tags/streams/</link>
+      <pubDate>Fri, 20 Nov 2026 12:00:00 -0800</pubDate>
+      <guid>https://scottzh8.github.io/tags/streams/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ml-Infra</title>
+      <link>https://scottzh8.github.io/tags/ml-infra/</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 -0800</pubDate>
+      <guid>https://scottzh8.github.io/tags/ml-infra/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sglang</title>
+      <link>https://scottzh8.github.io/tags/sglang/</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 -0800</pubDate>
+      <guid>https://scottzh8.github.io/tags/sglang/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Talk-Notes</title>
+      <link>https://scottzh8.github.io/tags/talk-notes/</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 -0800</pubDate>
+      <guid>https://scottzh8.github.io/tags/talk-notes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tpu</title>
+      <link>https://scottzh8.github.io/tags/tpu/</link>
+      <pubDate>Sun, 15 Nov 2026 12:00:00 -0800</pubDate>
+      <guid>https://scottzh8.github.io/tags/tpu/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lora</title>
+      <link>https://scottzh8.github.io/tags/lora/</link>
+      <pubDate>Thu, 12 Nov 2026 14:30:00 -0800</pubDate>
+      <guid>https://scottzh8.github.io/tags/lora/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rl</title>
+      <link>https://scottzh8.github.io/tags/rl/</link>
+      <pubDate>Thu, 12 Nov 2026 14:30:00 -0800</pubDate>
+      <guid>https://scottzh8.github.io/tags/rl/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Thinking-Machines</title>
+      <link>https://scottzh8.github.io/tags/thinking-machines/</link>
+      <pubDate>Thu, 12 Nov 2026 14:30:00 -0800</pubDate>
+      <guid>https://scottzh8.github.io/tags/thinking-machines/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tinker</title>
+      <link>https://scottzh8.github.io/tags/tinker/</link>
+      <pubDate>Thu, 12 Nov 2026 14:30:00 -0800</pubDate>
+      <guid>https://scottzh8.github.io/tags/tinker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automated-Research</title>
+      <link>https://scottzh8.github.io/tags/automated-research/</link>
+      <pubDate>Thu, 12 Nov 2026 14:20:00 -0800</pubDate>
+      <guid>https://scottzh8.github.io/tags/automated-research/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reward-Hacking</title>
+      <link>https://scottzh8.github.io/tags/reward-hacking/</link>
+      <pubDate>Thu, 12 Nov 2026 14:20:00 -0800</pubDate>
+      <guid>https://scottzh8.github.io/tags/reward-hacking/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Rsi</title>
+      <link>https://scottzh8.github.io/tags/rsi/</link>
+      <pubDate>Thu, 12 Nov 2026 14:20:00 -0800</pubDate>
+      <guid>https://scottzh8.github.io/tags/rsi/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

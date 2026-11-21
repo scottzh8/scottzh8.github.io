@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 320" role="img" aria-label="Side by side memory hierarchies of an NVIDIA GPU and a Google TPU">
+<defs>
+<marker id="fig-4-memory-ah2" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="arrowhead"/></marker>
+</defs>
+<text x="185" y="24" text-anchor="middle" class="t-ink" font-size="14" font-weight="600">NVIDIA GPU (H100 shown)</text>
+<text x="555" y="24" text-anchor="middle" class="t-ink" font-size="14" font-weight="600">Google TPU (Ironwood / 8i)</text>
+<!-- GPU stack -->
+<rect x="95" y="40" width="180" height="40" rx="6" class="s-box"/>
+<text x="185" y="58" text-anchor="middle" class="t-ink" font-size="12" font-weight="600">Registers</text>
+<text x="185" y="72" text-anchor="middle" class="t-muted" font-size="10">per thread</text>
+<rect x="75" y="92" width="220" height="44" rx="6" class="s-box"/>
+<text x="185" y="110" text-anchor="middle" class="t-ink" font-size="12" font-weight="600">L1 / shared memory</text>
+<text x="185" y="125" text-anchor="middle" class="t-muted" font-size="10">≤256 KB per SM × 132 SMs · partly HW cache</text>
+<rect x="55" y="148" width="260" height="44" rx="6" class="s-box"/>
+<text x="185" y="166" text-anchor="middle" class="t-ink" font-size="12" font-weight="600">L2 cache · 50 MB</text>
+<text x="185" y="181" text-anchor="middle" class="t-muted" font-size="10">hardware-managed</text>
+<rect x="35" y="204" width="300" height="44" rx="6" class="s-chk"/>
+<text x="185" y="222" text-anchor="middle" class="t-chk" font-size="12" font-weight="600">HBM · 80 GB</text>
+<text x="185" y="237" text-anchor="middle" class="t-chk" font-size="10">off-chip</text>
+<text x="185" y="276" text-anchor="middle" class="t-muted" font-size="11">Kernel author tiles for SMEM;</text>
+<text x="185" y="291" text-anchor="middle" class="t-muted" font-size="11">hardware decides much of the caching.</text>
+<!-- divider -->
+<line x1="370" y1="40" x2="370" y2="300" class="s-line" stroke-dasharray="3 4"/>
+<!-- TPU stack -->
+<rect x="465" y="40" width="180" height="40" rx="6" class="s-box"/>
+<text x="555" y="58" text-anchor="middle" class="t-ink" font-size="12" font-weight="600">Vector registers</text>
+<text x="555" y="72" text-anchor="middle" class="t-muted" font-size="10">feed MXU / VPU</text>
+<rect x="425" y="92" width="260" height="100" rx="6" class="s-acc"/>
+<text x="555" y="122" text-anchor="middle" class="t-acc" font-size="13" font-weight="600">On-chip SRAM (VMEM …)</text>
+<text x="555" y="140" text-anchor="middle" class="t-acc" font-size="11">software-managed scratchpad</text>
+<text x="555" y="160" text-anchor="middle" class="t-acc t-mono" font-size="11">TPU 8t: 128 MB · TPU 8i: 384 MB</text>
+<text x="555" y="178" text-anchor="middle" class="t-acc" font-size="10">no cache tiers to reason about</text>
+<rect x="405" y="204" width="300" height="44" rx="6" class="s-chk"/>
+<text x="555" y="222" text-anchor="middle" class="t-chk" font-size="12" font-weight="600">HBM · 192 GB (Ironwood) / 288 GB (8i)</text>
+<text x="555" y="237" text-anchor="middle" class="t-chk" font-size="10">off-chip, still there</text>
+<text x="555" y="276" text-anchor="middle" class="t-muted" font-size="11">Compiler / Pallas kernel schedules every</text>
+<text x="555" y="291" text-anchor="middle" class="t-muted" font-size="11">HBM↔SRAM DMA explicitly.</text>
+</svg>
