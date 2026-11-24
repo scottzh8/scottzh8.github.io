@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 230" role="img" aria-label="TPU scale ladder from chip to cube to superpod to Virgo cluster">
+<defs>
+<marker id="fig-2-scale-ladder-ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="arrowhead"/></marker>
+</defs>
+<!-- chip -->
+<rect x="10" y="40" width="140" height="130" rx="8" class="s-box"/>
+<rect x="55" y="70" width="50" height="50" rx="4" class="s-acc"/>
+<text x="80" y="100" text-anchor="middle" class="t-acc t-mono" font-size="11">TPU</text>
+<text x="80" y="25" text-anchor="middle" class="t-ink" font-size="13" font-weight="600">1 chip</text>
+<text x="80" y="145" text-anchor="middle" class="t-muted" font-size="11">TensorCores + HBM</text>
+<text x="80" y="160" text-anchor="middle" class="t-muted" font-size="11">4 per host</text>
+<!-- cube -->
+<rect x="195" y="40" width="150" height="130" rx="8" class="s-box"/>
+<g class="cube">
+<rect x="235" y="62" width="14" height="14" rx="2" class="s-acc"/><rect x="253" y="62" width="14" height="14" rx="2" class="s-acc"/><rect x="271" y="62" width="14" height="14" rx="2" class="s-acc"/><rect x="289" y="62" width="14" height="14" rx="2" class="s-acc"/>
+<rect x="235" y="80" width="14" height="14" rx="2" class="s-acc"/><rect x="253" y="80" width="14" height="14" rx="2" class="s-acc"/><rect x="271" y="80" width="14" height="14" rx="2" class="s-acc"/><rect x="289" y="80" width="14" height="14" rx="2" class="s-acc"/>
+<rect x="235" y="98" width="14" height="14" rx="2" class="s-acc"/><rect x="253" y="98" width="14" height="14" rx="2" class="s-acc"/><rect x="271" y="98" width="14" height="14" rx="2" class="s-acc"/><rect x="289" y="98" width="14" height="14" rx="2" class="s-acc"/>
+<rect x="235" y="116" width="14" height="14" rx="2" class="s-acc"/><rect x="253" y="116" width="14" height="14" rx="2" class="s-acc"/><rect x="271" y="116" width="14" height="14" rx="2" class="s-acc"/><rect x="289" y="116" width="14" height="14" rx="2" class="s-acc"/>
+</g>
+<text x="270" y="25" text-anchor="middle" class="t-ink" font-size="13" font-weight="600">Cube · 64 chips</text>
+<text x="270" y="150" text-anchor="middle" class="t-muted" font-size="11">4×4×4 torus, 1 rack</text>
+<text x="270" y="164" text-anchor="middle" class="t-acc t-mono" font-size="11">ICI (electrical)</text>
+<!-- superpod -->
+<rect x="390" y="40" width="160" height="130" rx="8" class="s-box"/>
+<g>
+<rect x="410" y="60" width="22" height="22" rx="3" class="s-chip"/><rect x="438" y="60" width="22" height="22" rx="3" class="s-chip"/><rect x="466" y="60" width="22" height="22" rx="3" class="s-chip"/><rect x="494" y="60" width="22" height="22" rx="3" class="s-chip"/><rect x="522" y="60" width="16" height="22" rx="3" class="s-chip"/>
+<rect x="410" y="88" width="22" height="22" rx="3" class="s-chip"/><rect x="438" y="88" width="22" height="22" rx="3" class="s-chip"/><rect x="466" y="88" width="22" height="22" rx="3" class="s-chip"/><rect x="494" y="88" width="22" height="22" rx="3" class="s-chip"/><rect x="522" y="88" width="16" height="22" rx="3" class="s-chip"/>
+<line x1="404" y1="118" x2="544" y2="118" class="s-acc-line" stroke-dasharray="4 3"/>
+</g>
+<text x="470" y="25" text-anchor="middle" class="t-ink" font-size="13" font-weight="600">Superpod</text>
+<text x="470" y="138" text-anchor="middle" class="t-muted t-mono" font-size="11">9,216 (Ironwood)</text>
+<text x="470" y="152" text-anchor="middle" class="t-muted t-mono" font-size="11">9,600 (TPU 8t)</text>
+<text x="470" y="166" text-anchor="middle" class="t-acc t-mono" font-size="11">OCS (optical)</text>
+<!-- cluster -->
+<rect x="595" y="40" width="135" height="130" rx="8" class="s-acc"/>
+<text x="662" y="25" text-anchor="middle" class="t-ink" font-size="13" font-weight="600">Virgo cluster</text>
+<text x="662" y="88" text-anchor="middle" class="t-acc" font-size="22" font-weight="700">~1M</text>
+<text x="662" y="106" text-anchor="middle" class="t-acc" font-size="11">chips, one logical</text>
+<text x="662" y="120" text-anchor="middle" class="t-acc" font-size="11">cluster</text>
+<text x="662" y="148" text-anchor="middle" class="t-muted t-mono" font-size="11">~134k / DC</text>
+<text x="662" y="162" text-anchor="middle" class="t-muted t-mono" font-size="11">Pathways + JAX</text>
+<!-- arrows -->
+<line x1="152" y1="105" x2="190" y2="105" class="s-line" marker-end="url(#fig-2-scale-ladder-ah)"/>
+<line x1="347" y1="105" x2="385" y2="105" class="s-line" marker-end="url(#fig-2-scale-ladder-ah)"/>
+<line x1="552" y1="105" x2="590" y2="105" class="s-line" marker-end="url(#fig-2-scale-ladder-ah)"/>
+<text x="370" y="212" text-anchor="middle" class="t-muted" font-size="12">Software reconfigures around failures: OCS routes around faulty links with no human step (TPU 8t targets &gt;97% goodput).</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 170" role="img" aria-label="Timeline of TPU externalization from October 2025 to November 2026">
+<line x1="30" y1="70" x2="700" y2="70" class="s-line"/>
+<!-- points -->
+<g>
+<circle cx="72" cy="70" r="6" class="s-acc"/>
+<text x="72" y="44" text-anchor="middle" class="t-ink" font-size="12" font-weight="600">Oct 2025</text>
+<text x="72" y="98" text-anchor="middle" class="t-muted" font-size="11">Anthropic deal</text>
+<text x="72" y="113" text-anchor="middle" class="t-muted" font-size="11">up to 1M TPUs</text>
+<text x="72" y="128" text-anchor="middle" class="t-muted" font-size="11">SGLang-Jax launches</text>
+</g>
+<g>
+<circle cx="190" cy="70" r="6" class="s-box"/>
+<text x="190" y="44" text-anchor="middle" class="t-ink" font-size="12" font-weight="600">Feb 2026</text>
+<text x="190" y="98" text-anchor="middle" class="t-muted" font-size="11">Meta TPU talks</text>
+<text x="190" y="113" text-anchor="middle" class="t-muted" font-size="11">(reported)</text>
+</g>
+<g>
+<circle cx="312" cy="70" r="6" class="s-acc"/>
+<text x="312" y="44" text-anchor="middle" class="t-ink" font-size="12" font-weight="600">Apr 2026</text>
+<text x="312" y="98" text-anchor="middle" class="t-muted" font-size="11">TPU 8t and 8i at Next</text>
+<text x="312" y="113" text-anchor="middle" class="t-muted" font-size="11">TorchTPU preview</text>
+</g>
+<g>
+<circle cx="440" cy="70" r="6" class="s-box"/>
+<text x="440" y="44" text-anchor="middle" class="t-ink" font-size="12" font-weight="600">Jul 2026</text>
+<text x="440" y="98" text-anchor="middle" class="t-muted" font-size="11">RadixArk × Google:</text>
+<text x="440" y="113" text-anchor="middle" class="t-muted" font-size="11">full SGLang on TPU</text>
+</g>
+<g>
+<circle cx="585" cy="70" r="6" class="s-acc"/>
+<text x="585" y="44" text-anchor="middle" class="t-ink" font-size="12" font-weight="600">Oct 2026</text>
+<text x="585" y="98" text-anchor="middle" class="t-muted" font-size="11">TorchTPU open-sourced</text>
+<text x="585" y="113" text-anchor="middle" class="t-muted" font-size="11">+ vLLM and SGLang</text>
+<text x="585" y="128" text-anchor="middle" class="t-muted" font-size="11">backends</text>
+</g>
+<g>
+<circle cx="690" cy="70" r="6" class="s-box"/>
+<text x="690" y="44" text-anchor="middle" class="t-ink" font-size="12" font-weight="600">Nov 2026</text>
+<text x="690" y="98" text-anchor="middle" class="t-muted" font-size="11">TPU 8tx +</text>
+<text x="690" y="113" text-anchor="middle" class="t-muted" font-size="11">TPU 8i Max</text>
+</g>
+</svg>

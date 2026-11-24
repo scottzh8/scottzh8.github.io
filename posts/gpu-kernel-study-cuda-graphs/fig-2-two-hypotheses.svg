@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 280" role="img" aria-label="Two hypotheses for what a CUDA graph saves: CPU and GPU timelines for eager launches and a graph under each">
+  <!-- Both panels: CPU far ahead of the GPU. Kernel gap 14 px (eager) vs 8 px (H2 graph). -->
+  <rect class="s-box" x="8" y="8" width="366" height="264" rx="10"/>
+  <text x="22" y="32" font-size="13.5" font-weight="700" class="t-ink">H1: a graph only saves CPU time</text>
+  <text x="22" y="62" font-size="12" font-weight="700" class="t-ink">eager</text>
+  <text x="22" y="83" font-size="11" class="t-muted">CPU</text>
+  <text x="22" y="105" font-size="11" class="t-muted">GPU</text>
+  <rect class="s-chk" x="64" y="72" width="20" height="14" rx="2"/><rect class="s-chk" x="86" y="72" width="20" height="14" rx="2"/><rect class="s-chk" x="108" y="72" width="20" height="14" rx="2"/><rect class="s-chk" x="130" y="72" width="20" height="14" rx="2"/>
+  <text x="158" y="83" font-size="11" class="t-muted">N launch calls</text>
+  <rect class="s-acc" x="90" y="94" width="50" height="14" rx="2"/><rect class="s-acc" x="154" y="94" width="50" height="14" rx="2"/><rect class="s-acc" x="218" y="94" width="50" height="14" rx="2"/><rect class="s-acc" x="282" y="94" width="50" height="14" rx="2"/>
+  <text x="22" y="132" font-size="12" font-weight="700" class="t-ink">graph</text>
+  <text x="22" y="153" font-size="11" class="t-muted">CPU</text>
+  <text x="22" y="175" font-size="11" class="t-muted">GPU</text>
+  <rect class="s-chk" x="64" y="142" width="24" height="14" rx="2"/>
+  <text x="96" y="153" font-size="11" class="t-muted">one call, then the CPU is free</text>
+  <rect class="s-acc" x="90" y="164" width="50" height="14" rx="2"/><rect class="s-acc" x="154" y="164" width="50" height="14" rx="2"/><rect class="s-acc" x="218" y="164" width="50" height="14" rx="2"/><rect class="s-acc" x="282" y="164" width="50" height="14" rx="2"/>
+  <line class="s-line" x1="332" x2="332" y1="88" y2="184" stroke-dasharray="3 3"/>
+  <text x="332" y="198" font-size="11" text-anchor="middle" class="t-muted">same finish</text>
+  <text x="22" y="220" font-size="11" class="t-muted">CPU work shrinks; the GPU row is identical.</text>
+  <text x="22" y="242" font-size="11.5" class="t-ink">Predicts: no wall-time gain while the</text>
+  <text x="22" y="258" font-size="11.5" class="t-ink">CPU keeps ahead of the GPU.</text>
+  <rect class="s-box" x="386" y="8" width="366" height="264" rx="10"/>
+  <text x="400" y="32" font-size="13.5" font-weight="700" class="t-ink">H2: it also shortens the GPU's handoff</text>
+  <text x="400" y="62" font-size="12" font-weight="700" class="t-ink">eager</text>
+  <text x="400" y="83" font-size="11" class="t-muted">CPU</text>
+  <text x="400" y="105" font-size="11" class="t-muted">GPU</text>
+  <rect class="s-chk" x="442" y="72" width="20" height="14" rx="2"/><rect class="s-chk" x="464" y="72" width="20" height="14" rx="2"/><rect class="s-chk" x="486" y="72" width="20" height="14" rx="2"/><rect class="s-chk" x="508" y="72" width="20" height="14" rx="2"/>
+  <text x="536" y="83" font-size="11" class="t-muted">N launch calls</text>
+  <rect class="s-acc" x="468" y="94" width="50" height="14" rx="2"/><rect class="s-acc" x="532" y="94" width="50" height="14" rx="2"/><rect class="s-acc" x="596" y="94" width="50" height="14" rx="2"/><rect class="s-acc" x="660" y="94" width="50" height="14" rx="2"/>
+  <text x="400" y="132" font-size="12" font-weight="700" class="t-ink">graph</text>
+  <text x="400" y="153" font-size="11" class="t-muted">CPU</text>
+  <text x="400" y="175" font-size="11" class="t-muted">GPU</text>
+  <rect class="s-chk" x="442" y="142" width="24" height="14" rx="2"/>
+  <text x="474" y="153" font-size="11" class="t-muted">one call, then the CPU is free</text>
+  <rect class="s-ok" x="468" y="164" width="50" height="14" rx="2"/><rect class="s-ok" x="526" y="164" width="50" height="14" rx="2"/><rect class="s-ok" x="584" y="164" width="50" height="14" rx="2"/><rect class="s-ok" x="642" y="164" width="50" height="14" rx="2"/>
+  <line class="s-line" x1="710" x2="710" y1="88" y2="184" stroke-dasharray="3 3"/>
+  <line class="s-acc-line" x1="692" x2="692" y1="158" y2="184" stroke-dasharray="3 3"/>
+  <text x="701" y="198" font-size="11" text-anchor="middle" class="t-acc">finishes earlier</text>
+  <text x="400" y="220" font-size="11" class="t-muted">Same CPU saving, and the gaps between kernels shrink.</text>
+  <text x="400" y="242" font-size="11.5" class="t-ink">Predicts: a saving per kernel boundary,</text>
+  <text x="400" y="258" font-size="11.5" class="t-ink">even when the CPU is far ahead.</text>
+</svg>

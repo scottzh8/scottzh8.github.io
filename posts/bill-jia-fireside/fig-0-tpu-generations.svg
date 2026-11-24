@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 190" role="img" aria-label="Timeline of Google TPU generations from v1 in 2015 to the TPU 8 family in 2026">
+<line x1="26" y1="62" x2="714" y2="62" class="s-line"/>
+<circle cx="46" cy="62" r="6" class="s-box"/>
+<text x="46" y="46" text-anchor="middle" class="t-muted t-mono" font-size="10.5">2015</text>
+<text x="46" y="88" text-anchor="middle" class="t-ink" font-size="12" font-weight="600">v1</text>
+<text x="46" y="106" text-anchor="middle" class="t-muted" font-size="10.5">inference only</text>
+<circle cx="127" cy="62" r="6" class="s-box"/>
+<text x="127" y="46" text-anchor="middle" class="t-muted t-mono" font-size="10.5">2017</text>
+<text x="127" y="88" text-anchor="middle" class="t-ink" font-size="12" font-weight="600">v2</text>
+<text x="127" y="106" text-anchor="middle" class="t-muted" font-size="10.5">first training</text>
+<text x="127" y="119" text-anchor="middle" class="t-muted" font-size="10.5">pods</text>
+<circle cx="208" cy="62" r="6" class="s-box"/>
+<text x="208" y="46" text-anchor="middle" class="t-muted t-mono" font-size="10.5">2018</text>
+<text x="208" y="88" text-anchor="middle" class="t-ink" font-size="12" font-weight="600">v3</text>
+<text x="208" y="106" text-anchor="middle" class="t-muted" font-size="10.5">liquid cooling</text>
+<circle cx="289" cy="62" r="6" class="s-box"/>
+<text x="289" y="46" text-anchor="middle" class="t-muted t-mono" font-size="10.5">2021</text>
+<text x="289" y="88" text-anchor="middle" class="t-ink" font-size="12" font-weight="600">v4</text>
+<text x="289" y="106" text-anchor="middle" class="t-muted" font-size="10.5">OCS +</text>
+<text x="289" y="119" text-anchor="middle" class="t-muted" font-size="10.5">SparseCore</text>
+<circle cx="370" cy="62" r="6" class="s-box"/>
+<text x="370" y="46" text-anchor="middle" class="t-muted t-mono" font-size="10.5">2023</text>
+<text x="370" y="88" text-anchor="middle" class="t-ink" font-size="12" font-weight="600">v5e · v5p</text>
+<text x="370" y="106" text-anchor="middle" class="t-muted" font-size="10.5">cost-efficient /</text>
+<text x="370" y="119" text-anchor="middle" class="t-muted" font-size="10.5">large-scale</text>
+<circle cx="451" cy="62" r="6" class="s-box"/>
+<text x="451" y="46" text-anchor="middle" class="t-muted t-mono" font-size="10.5">2024</text>
+<text x="451" y="88" text-anchor="middle" class="t-ink" font-size="12" font-weight="600">Trillium</text>
+<text x="451" y="102" text-anchor="middle" class="t-ink" font-size="12" font-weight="600">(v6e)</text>
+<text x="451" y="120" text-anchor="middle" class="t-muted" font-size="10.5">256×256 MXUs</text>
+<circle cx="532" cy="62" r="7" class="s-acc"/>
+<text x="532" y="46" text-anchor="middle" class="t-acc t-mono" font-size="10.5" font-weight="600">2025</text>
+<text x="532" y="88" text-anchor="middle" class="t-ink" font-size="12" font-weight="600">Ironwood</text>
+<text x="532" y="102" text-anchor="middle" class="t-ink" font-size="12" font-weight="600">(TPU7x)</text>
+<text x="532" y="120" text-anchor="middle" class="t-muted" font-size="10.5">inference-first</text>
+<text x="532" y="133" text-anchor="middle" class="t-muted" font-size="10.5">192 GB HBM</text>
+<circle cx="613" cy="62" r="7" class="s-acc"/>
+<text x="613" y="46" text-anchor="middle" class="t-acc t-mono" font-size="10.5" font-weight="600">Apr 2026</text>
+<text x="613" y="88" text-anchor="middle" class="t-ink" font-size="12" font-weight="600">TPU 8t · 8i</text>
+<text x="613" y="106" text-anchor="middle" class="t-muted" font-size="10.5">train vs. serve</text>
+<text x="613" y="119" text-anchor="middle" class="t-muted" font-size="10.5">split</text>
+<circle cx="694" cy="62" r="7" class="s-acc"/>
+<text x="694" y="46" text-anchor="middle" class="t-acc t-mono" font-size="10.5" font-weight="600">Nov 2026</text>
+<text x="694" y="88" text-anchor="middle" class="t-ink" font-size="12" font-weight="600">TPU 8i Max</text>
+<text x="694" y="102" text-anchor="middle" class="t-ink" font-size="12" font-weight="600">· 8tx</text>
+<text x="694" y="120" text-anchor="middle" class="t-muted" font-size="10.5">two dies;</text>
+<text x="694" y="133" text-anchor="middle" class="t-muted" font-size="10.5">confidential</text>
+<path d="M498,24 L498,18 L724,18 L724,24" class="s-acc-line" stroke-width="1.5"/>
+<text x="611" y="12" text-anchor="middle" class="t-acc" font-size="10.5">discussed in this post</text>
+</svg>

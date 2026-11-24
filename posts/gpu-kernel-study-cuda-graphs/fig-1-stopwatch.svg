@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 250" role="img" aria-label="How a gap between two kernels is measured from per-block timestamps">
+  <defs>
+    <marker id="cg1-arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="arrowhead-acc"/></marker>
+  </defs>
+  <text x="205" y="20" font-size="13" font-weight="600" text-anchor="middle" class="t-ink">kernel k</text>
+  <text x="490" y="20" font-size="13" font-weight="600" text-anchor="middle" class="t-ink">kernel k+1</text>
+  <!-- SM rows -->
+  <text x="88" y="48" font-size="11" text-anchor="end" class="t-muted t-mono">SM 142</text>
+  <text x="88" y="74" font-size="11" text-anchor="end" class="t-muted t-mono">SM 143</text>
+  <text x="88" y="100" font-size="11" text-anchor="end" class="t-muted t-mono">SM 0</text>
+  <text x="88" y="122" font-size="13" text-anchor="end" class="t-muted">⋮</text>
+  <text x="88" y="146" font-size="11" text-anchor="end" class="t-muted t-mono">SM 141</text>
+  <rect class="s-acc" x="110" y="34" width="222" height="18" rx="3"/>
+  <rect class="s-acc" x="112" y="60" width="224" height="18" rx="3"/>
+  <rect class="s-acc" x="110" y="86" width="219" height="18" rx="3"/>
+  <rect class="s-acc" x="111" y="132" width="223" height="18" rx="3"/>
+  <rect class="s-ok" x="372" y="34" width="224" height="18" rx="3"/>
+  <rect class="s-ok" x="370" y="60" width="222" height="18" rx="3"/>
+  <rect class="s-ok" x="373" y="86" width="224" height="18" rx="3"/>
+  <rect class="s-ok" x="371" y="132" width="223" height="18" rx="3"/>
+  <!-- boundaries -->
+  <line class="s-line" x1="336" x2="336" y1="28" y2="176" stroke-dasharray="4 3"/>
+  <line class="s-line" x1="370" x2="370" y1="28" y2="176" stroke-dasharray="4 3"/>
+  <line class="s-acc-line" x1="338" x2="368" y1="168" y2="168" marker-start="url(#cg1-arr)" marker-end="url(#cg1-arr)"/>
+  <text x="353" y="190" font-size="12.5" font-weight="700" text-anchor="middle" class="t-acc">gap</text>
+  <text x="330" y="208" font-size="11" text-anchor="end" class="t-muted">last block of kernel k ends</text>
+  <text x="376" y="208" font-size="11" class="t-muted">first block of kernel k+1 starts</text>
+  <line class="s-line" x1="110" x2="336" y1="160" y2="160"/>
+  <text x="223" y="174" font-size="11" text-anchor="middle" class="t-muted">span(k) = max(end) − min(start) over 148 blocks</text>
+  <!-- legend / formula -->
+  <rect class="s-chip" x="610" y="34" width="140" height="116" rx="8"/>
+  <text x="620" y="54" font-size="11.5" font-weight="600" class="t-ink">thread 0 of every</text>
+  <text x="620" y="69" font-size="11.5" font-weight="600" class="t-ink">block writes</text>
+  <text x="620" y="90" font-size="11" class="t-mono t-acc">%smid</text>
+  <text x="620" y="106" font-size="11" class="t-mono t-acc">start, end</text>
+  <text x="620" y="124" font-size="10.5" class="t-muted">(%globaltimer,</text>
+  <text x="620" y="139" font-size="10.5" class="t-muted">32 ns ticks)</text>
+  <text x="380" y="236" font-size="12" text-anchor="middle" class="t-ink t-mono">gap(k) = min(start of kernel k+1) − max(end of kernel k)</text>
+</svg>

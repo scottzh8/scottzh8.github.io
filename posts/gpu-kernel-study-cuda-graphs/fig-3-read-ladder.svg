@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 214" role="img" aria-label="CPU read cost per 8-byte load for three kinds of memory, log scale">
+  <!-- log axis 0.1 .. 10,000 ns mapped to x 250 .. 730 (120 px per decade) -->
+  <text x="250" y="16" font-size="11.5" class="t-muted">CPU cost per 8-byte load (ns, log scale, min of 3 passes)</text>
+  <line class="s-line" x1="250" x2="250" y1="26" y2="172" stroke-width="0.7" stroke-dasharray="2 3"/>
+  <line class="s-line" x1="370" x2="370" y1="26" y2="172" stroke-width="0.7" stroke-dasharray="2 3"/>
+  <line class="s-line" x1="490" x2="490" y1="26" y2="172" stroke-width="0.7" stroke-dasharray="2 3"/>
+  <line class="s-line" x1="610" x2="610" y1="26" y2="172" stroke-width="0.7" stroke-dasharray="2 3"/>
+  <line class="s-line" x1="730" x2="730" y1="26" y2="172" stroke-width="0.7" stroke-dasharray="2 3"/>
+  <text x="250" y="188" font-size="10.5" text-anchor="middle" class="t-muted">0.1</text>
+  <text x="370" y="188" font-size="10.5" text-anchor="middle" class="t-muted">1</text>
+  <text x="490" y="188" font-size="10.5" text-anchor="middle" class="t-muted">10</text>
+  <text x="610" y="188" font-size="10.5" text-anchor="middle" class="t-muted">100</text>
+  <text x="730" y="188" font-size="10.5" text-anchor="middle" class="t-muted">1,000</text>
+  <!-- 0.27 ns: x = 250 + 120*log10(2.7) = 301.8 -->
+  <text x="240" y="46" font-size="12" text-anchor="end" font-weight="600" class="t-ink">cached host RAM</text>
+  <text x="240" y="61" font-size="10.5" text-anchor="end" class="t-muted">malloc, pinned cudaHostAlloc</text>
+  <rect class="s-ok" x="250" y="36" width="52" height="22" rx="3"/>
+  <text x="308" y="52" font-size="11.5" class="t-ok t-mono">0.27 ns</text>
+  <!-- 121.6 ns: x = 250 + 120*log10(1216) = 620.2 -->
+  <text x="240" y="96" font-size="12" text-anchor="end" font-weight="600" class="t-ink">write-combined host RAM</text>
+  <text x="240" y="111" font-size="10.5" text-anchor="end" class="t-muted">cudaHostAlloc(…WriteCombined)</text>
+  <rect class="s-chk" x="250" y="86" width="370" height="22" rx="3"/>
+  <text x="626" y="102" font-size="11.5" class="t-chk t-mono">121.6 ns</text>
+  <!-- 1227.7 ns: x = 250 + 120*log10(12277) = 740.5 -> clamp to 738 -->
+  <text x="240" y="146" font-size="12" text-anchor="end" font-weight="600" class="t-ink">GPU memory through PCIe</text>
+  <text x="240" y="161" font-size="10.5" text-anchor="end" class="t-muted">the GPU's 2 MiB BAR window</text>
+  <rect class="s-acc" x="250" y="136" width="488" height="22" rx="3"/>
+  <text x="732" y="152" font-size="11.5" text-anchor="end" class="t-acc t-mono">1,228 ns</text>
+  <!-- marker: eager command buffer -->
+  <line class="s-acc-line" x1="620" x2="620" y1="72" y2="84"/>
+  <text x="620" y="70" font-size="11" text-anchor="middle" font-weight="600" class="t-acc">eager command buffer: 121 ns/load</text>
+  <text x="380" y="208" font-size="11" text-anchor="middle" class="t-muted">Every /dev/nvidiactl mapping in the process reads at 0.33 or ~120 ns: host RAM, cached or write-combined. None is slower.</text>
+</svg>

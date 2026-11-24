@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 340" role="img" aria-label="Diagram of a TPU chip showing TensorCores with MXUs, vector and scalar units and VMEM, SparseCores, HBM and ICI links">
+<!-- chip outline -->
+<rect x="120" y="20" width="500" height="290" rx="12" class="s-box"/>
+<text x="370" y="44" text-anchor="middle" class="t-muted t-mono" font-size="11">ONE TPU CHIP (Ironwood-style)</text>
+<!-- TensorCore 1 -->
+<rect x="140" y="58" width="220" height="160" rx="8" class="s-acc"/>
+<text x="250" y="78" text-anchor="middle" class="t-acc" font-size="13" font-weight="600">TensorCore</text>
+<!-- MXU grid -->
+<g>
+<rect x="152" y="90" width="44" height="44" rx="3" class="s-box"/><rect x="200" y="90" width="44" height="44" rx="3" class="s-box"/>
+<rect x="152" y="138" width="44" height="44" rx="3" class="s-box"/><rect x="200" y="138" width="44" height="44" rx="3" class="s-box"/>
+<text x="198" y="198" text-anchor="middle" class="t-ink" font-size="10">MXUs (systolic</text>
+<text x="198" y="210" text-anchor="middle" class="t-ink" font-size="10">matmul arrays)</text>
+</g>
+<rect x="254" y="90" width="96" height="28" rx="3" class="s-box"/>
+<text x="302" y="108" text-anchor="middle" class="t-ink" font-size="10">Vector unit</text>
+<rect x="254" y="122" width="96" height="24" rx="3" class="s-box"/>
+<text x="302" y="138" text-anchor="middle" class="t-ink" font-size="10">Scalar unit</text>
+<rect x="254" y="150" width="96" height="40" rx="3" class="s-chk"/>
+<text x="302" y="167" text-anchor="middle" class="t-chk" font-size="10" font-weight="600">VMEM</text>
+<text x="302" y="181" text-anchor="middle" class="t-chk" font-size="9">SW-managed SRAM</text>
+<!-- TensorCore 2 (ghost) -->
+<rect x="372" y="58" width="100" height="160" rx="8" class="s-acc" opacity="0.55"/>
+<text x="422" y="140" text-anchor="middle" class="t-acc" font-size="12" font-weight="600">TensorCore</text>
+<text x="422" y="156" text-anchor="middle" class="t-acc" font-size="10">×2 per chip</text>
+<!-- SparseCores -->
+<rect x="484" y="58" width="122" height="160" rx="8" class="s-ok"/>
+<text x="545" y="78" text-anchor="middle" class="t-ok" font-size="13" font-weight="600">SparseCores</text>
+<rect x="496" y="90" width="46" height="38" rx="3" class="s-box"/><rect x="548" y="90" width="46" height="38" rx="3" class="s-box"/>
+<rect x="496" y="134" width="46" height="38" rx="3" class="s-box"/><rect x="548" y="134" width="46" height="38" rx="3" class="s-box"/>
+<text x="545" y="192" text-anchor="middle" class="t-ink" font-size="10">gather / scatter</text>
+<text x="545" y="206" text-anchor="middle" class="t-ink" font-size="10">dataflow cores ×4</text>
+<!-- ICI -->
+<rect x="140" y="232" width="466" height="30" rx="6" class="s-chip"/>
+<text x="373" y="252" text-anchor="middle" class="t-ink" font-size="11">ICI links → 6 neighbors in the 3D torus (on-die networking)</text>
+<!-- HBM -->
+<rect x="140" y="270" width="466" height="28" rx="6" class="s-chk"/>
+<text x="373" y="289" text-anchor="middle" class="t-chk" font-size="11" font-weight="600">HBM: 192 GB on Ironwood, 7.4 TB/s</text>
+<!-- side labels -->
+<text x="110" y="120" text-anchor="end" class="t-muted" font-size="11">Dense</text>
+<text x="110" y="134" text-anchor="end" class="t-muted" font-size="11">matmul,</text>
+<text x="110" y="148" text-anchor="end" class="t-muted" font-size="11">attention,</text>
+<text x="110" y="162" text-anchor="end" class="t-muted" font-size="11">FFN</text>
+<text x="630" y="120" class="t-muted" font-size="11">Embedding</text>
+<text x="630" y="134" class="t-muted" font-size="11">lookups,</text>
+<text x="630" y="148" class="t-muted" font-size="11">sparse ops,</text>
+<text x="630" y="162" class="t-muted" font-size="11">some</text>
+<text x="630" y="176" class="t-muted" font-size="11">collectives</text>
+</svg>

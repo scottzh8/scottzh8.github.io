@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Kernels on Scott Zhang</title>
+    <link>https://scottzh8.github.io/tags/kernels/</link>
+    <description>Recent content in Kernels on Scott Zhang</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Nov 2026 00:00:00 -0800</lastBuildDate>
+    <atom:link href="https://scottzh8.github.io/tags/kernels/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Gap Between Kernels: Mapping a B200 and Measuring What CUDA Graphs Save</title>
+      <link>https://scottzh8.github.io/posts/gpu-kernel-study-cuda-graphs/</link>
+      <pubDate>Tue, 24 Nov 2026 00:00:00 -0800</pubDate>
+      <guid>https://scottzh8.github.io/posts/gpu-kernel-study-cuda-graphs/</guid>
+      <description>Learning notes from instrumented experiments on an NVIDIA B200: %globaltimer resolution, deterministic block placement, the GPC map recovered from thread-block clusters, eager launches vs CUDA graphs across kernel lengths and chain lengths, where launch data lives, programmatic dependent launch, and graph update and memory costs. With interactive figures built from the raw data.</description>
+    </item>
+    <item>
+      <title>How to Reason About CUDA Streams and Block Admission</title>
+      <link>https://scottzh8.github.io/posts/gpu-kernel-study-stream-admission/</link>
+      <pubDate>Fri, 20 Nov 2026 12:00:00 -0800</pubDate>
+      <guid>https://scottzh8.github.io/posts/gpu-kernel-study-stream-admission/</guid>
+      <description>First-principles walkthrough of CUDA streams, the driver&amp;#39;s channels and GPFIFOs, and block admission onto SMs, followed by an instrumented two-stream experiment on an NVIDIA B200 with per-block timelines you can explore in the page or in Perfetto.</description>
+    </item>
+    <item>
+      <title>Recursive Self-Improvement, in Practice: Notes from the SGLang Summit 2026 Panel</title>
+      <link>https://scottzh8.github.io/posts/rsi-panel/</link>
+      <pubDate>Thu, 12 Nov 2026 14:20:00 -0800</pubDate>
+      <guid>https://scottzh8.github.io/posts/rsi-panel/</guid>
+      <description>Notes from the Recursive Self-Improvement panel at SGLang Summit 2026, lightly edited and paraphrased rather than verbatim.</description>
+    </item>
+  </channel>
+</rss>
